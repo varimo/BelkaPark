@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title>Режим работы</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="logo ml-10">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.jpg" alt="Логотип">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-xl-end justify-content-lg-end mr-10" id="navbar1">
+                <div class="menu-nav">
+                    <ul class="navbar-nav menu-icons">
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="tel:+79373843388">
+                                <img src="img/значки/phone.png" alt="Значок телефона"> 8-937-384-33-88
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="about.html#map">
+                                <img src="img/значки/location.png" alt="Значок местоположения"> Как добраться</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="price.html#sale">
+                                <img src="img/значки/sale.png" alt="Значок скидок"> Скидки и акции</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="about.html#faq">
+                                <img src="img/значки/question.png" alt="Значок вопросов"> Вопрос / ответ</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav menu-nav-main justify-content-between">
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="about.html">О парке</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="price.html">Цены</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="operating-mode.html">Режим работы</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="gallery.html">Галерея</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-header shadow bg-white rounded">
+        <h2>Режим работы</h2>
+    </div>
+    <div class="operation-mode">
+        <div class="operation-mode_text container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <img src="/img/значки/clock.png" alt="">
+                    <p><br>Работаем для вас каждый день!</p>
+                    <p>В будние и выходные дни<br>с 10:00 до 20:00</p>
+                </div>
+                <div class="operation-mode_img col-xl-6">
+                    <img src="/img/logo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Блок обратной свзязи -->
+    <div class="feedback text-center">
+        <button class="btn" data-toggle="modal" data-target="#exampleModal">
+            <img src="img/значки/arrow.png" alt="">
+            </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="contactForm" action="telegram.php" method="post">                                
+                        <div class="form-group">
+                            <label for="">Введите ваше имя</label>
+                            <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+                        </div>      		
+                        <div class="form-group">
+                            <label for="">Введите номер телефона</label>
+                            <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+                        </div>      		
+                        <div class="form-group">
+                            <label for="">Введите email</label>
+                            <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+                        </div>      
+                        <div class="form-group">
+                            <label for="">Введите сообщение</label>
+                            <textarea id="" class="form-control" required name="user_message" rows="4"></textarea>
+                        </div>		
+                        <button type="submit" class="btn btn-primary">Отправить форму</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        
+    </div>
+    <footer>
+        <div class="footer-block ml-10 mr-10 container">
+            <div class="row">
+                <div class="footer-contact footer-item col-xl-6 col-lg-6">
+                    <div class="container">
+                        <h4>Контакты</h4>
+                        <p>Телефон: <a href="tel:+79373843388">8-937-384-33-88</a></p>
+                        <p>Адрес:<br>г. Чебоксары, парк Роща Гузовского, Университетская 41А</p>
+                        <a href="about.html#map"><button type="button" class="btn btn-outline-light">Смотреть на карте</button></a>
+                    </div>
+                </div>
+                <div class="footer-social footer-item col-xl-6 col-lg-6">
+                    <div class="container footer-social-icons">
+                        <h4>Мы в соцсетях</h4>
+                    </div>
+                    <div class="container footer-social-icons">
+                        <a href="https://vk.com/belka_park">
+                            <img src="img/значки/vkontakte.png" alt="Значок vkontakte">
+                        </a>
+                        <a href="https://www.instagram.com/belka_park_/">
+                            <img src="img/значки/instagram.png" alt="Значок instagram">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=79373843388">
+                            <img src="img/значки/whatsapp.png" alt="Значок whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
